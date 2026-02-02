@@ -7,11 +7,11 @@ updateView()
 function updateView() {
     document.getElementById("brukerProfil").innerHTML = /*HTML*/`
    
-    <input id= "myName">
+    <input id= "myName"> Name
     <br>
-    <input id= "myAge">
+    <input id= "myAge"> Age
     <br>
-    <input id= "myColor">
+    <input id= "myColor"> Color
     <br>
     <button onclick= "enterText()">Enter</button>
     <br>
