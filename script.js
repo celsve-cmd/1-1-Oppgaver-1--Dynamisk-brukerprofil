@@ -7,11 +7,11 @@ updateView()
 function updateView() {
     document.getElementById("brukerProfil").innerHTML = /*HTML*/`
    
-    <input id= "myName"> Name
+    <input id= "myName" onchange= 'saveName(this.value)'> Name
     <br>
-    <input id= "myAge"> Age
+    <input id= "myAge" onchange= 'saveAge(this.value)'> Age
     <br>
-    <input id= "myColor"> Color
+    <input id= "myColor" onchange= 'saveColor(this.value)'> Color
     <br>
     <button onclick= "enterText()">Enter</button>
     <br>
@@ -23,12 +23,19 @@ function updateView() {
 }
 
 function enterText() {
-    nameInput = document.getElementById('myName').value //Siden let nameInput står tomt, så henter den verdien som blir gitt i inputfeltet og sender med som parameter. Det samme gjelder for alder og farge også.
-    ageInput = document.getElementById('myAge').value
-    colorInput = document.getElementById('myColor').value
     console.log(nameInput, ageInput, colorInput)
-
     document.getElementById('body').style.backgroundColor = colorInput
-
     updateView()
+}
+
+function saveName(name){
+nameInput = name
+}
+
+function saveAge(age){
+    ageInput = age
+}
+
+function saveColor(color){
+    colorInput = color
 }
