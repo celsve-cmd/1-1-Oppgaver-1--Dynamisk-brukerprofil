@@ -1,3 +1,12 @@
+/*Lag en nettside der brukeren kan skrive inn:
+navn
+alder
+favorittfarge
+Lag en funksjon som tar disse verdiene som parametere og:
+viser navnet og alderen i en tekst på siden
+-endrer bakgrunnsfargen basert på favorittfargen
+Funksjonen skal kunne brukes flere ganger med ulike verdier.*/
+
 let nameInput = ''
 let ageInput = ''
 let colorInput = ''
